@@ -136,7 +136,7 @@ const server = http.createServer((req, res) => {
 
 const PORT = process.env.PORT || 8000; // Use the PORT environment variable if set, or default to 8000
 
-// Listening for incoming requests from client
+// Run npm start to start the development server
 server.listen(PORT, '127.0.0.1', () => {
   const url = `http:///localhost:${PORT}`;
   console.log(`Server is running at ${url}`);
