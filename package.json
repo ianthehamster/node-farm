@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "http-server -p 3000"
+    "build": "parcel build index.js"
   },
   "author": "Ian Chow",
   "license": "ISC",
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "http-server": "^14.1.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "parcel-bundler": "^1.12.5"
   }
 }

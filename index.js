@@ -134,9 +134,12 @@ const server = http.createServer((req, res) => {
  * 2) Response Variable/Object
  */
 
+const PORT = process.env.PORT || 8000; // Use the PORT environment variable if set, or default to 8000
+
 // Listening for incoming requests from client
-server.listen(8000, '127.0.0.1', () => {
-  console.log('Listening to request on port 8000');
+server.listen(PORT, '127.0.0.1', () => {
+  const url = `http:///localhost:${PORT}`;
+  console.log(`Server is running at ${url}`);
 });
 /**
  * listen() takes in the port as the 1st parameter and host as 2nd parameter
